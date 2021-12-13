@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<title>jfPopUp</title>
+<link href="../jfPopUp.css" rel="stylesheet" type="text/css" />
+<link href="index.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+ 
+
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="../jquery.jfPopUp-min.js"></script>
+<script type="text/javascript">
+  /* ===== launch on load */
+  $(window).jfPopUp({
+      auto:true, 
+     message:'<h1>Order Placed</h1><p>Thanks for visiting Us.'});
+  
+
+  /* ===== launch on click */
+  $("nav#global a").jfPopUp({
+    mouseEvent:'click',
+     message:'<h1>Hello</h1><p>This is a message on click.'});
+
+/* ===== Arguments passed as data attributes on the element */
+$(".anotherWay").jfPopUp();
+
+</script>
+</body>
+</html>
